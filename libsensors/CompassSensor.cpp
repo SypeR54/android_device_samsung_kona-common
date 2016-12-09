@@ -165,11 +165,11 @@ int CompassSensor::readEvents(sensors_event_t* data, int count)
         if (type == EV_ABS) {
             float value = event->value;
             if (event->code == EVENT_TYPE_MAGV_X) {
-                mPendingEvent.magnetic.x = (float)value / 1000.0f;
+                mPendingEvent.magnetic.x = (float)value / 20000.0f;
             } else if (event->code == EVENT_TYPE_MAGV_Y) {
-                mPendingEvent.magnetic.y = (float)value / 1000.0f;
+                mPendingEvent.magnetic.y = (float)value / 20000.0f;
             } else if (event->code == EVENT_TYPE_MAGV_Z) {
-                mPendingEvent.magnetic.z = (float)value / 1000.0f;
+                mPendingEvent.magnetic.z = (float)value / 20000.0f;
             }
         } else if (type == EV_SYN) {
             mPendingEvent.timestamp = timevalToNano(event->time);
