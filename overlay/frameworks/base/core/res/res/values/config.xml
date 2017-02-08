@@ -105,7 +105,7 @@
     <bool name="config_uiBlurEnabled">true</bool>
 
      <!-- opt out of sensor default batch size - fix accel? --> 
-     <bool name="config_useDefaultBatchingForAccel">true</bool> 
+     <bool name="config_useDefaultBatchingForAccel">false</bool> 
 
     <!-- Dream of notifications -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
