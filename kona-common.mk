@@ -54,7 +54,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.smdk4x12
+    Snap
 
 # RIL
 PRODUCT_PACKAGES += \
