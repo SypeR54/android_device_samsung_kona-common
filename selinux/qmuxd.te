@@ -11,3 +11,4 @@ allow qmuxd sysfs:file write;
 allow qmuxd sysfs_wake_lock:file { open append };
 allow qmuxd socket_device:dir remove_name;
 allow qmuxd socket_device:sock_file { getattr unlink };
+allow qmuxd sysfs:file open;

@@ -15,3 +15,5 @@ allow qc_kickstart tombstone_data_file:dir search;
 allow qc_kickstart userdata_block_device:blk_file write;
 allow qc_kickstart vfat:dir search;
 allow qc_kickstart unlabeled:dir search;
+allow qc_kickstart shell_exec:file getattr;
+allow qc_kickstart toolbox_exec:file { read getattr open execute execute_no_trans };

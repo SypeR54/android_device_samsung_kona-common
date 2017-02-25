@@ -14,3 +14,4 @@ allow rild init:unix_stream_socket { read write listen accept getopt };
 allow rild radio_data_file:file { read getattr open };
 allow rild socket_device:dir remove_name;
 allow rild socket_device:sock_file unlink;
+allow rild system_file:file execmod;
