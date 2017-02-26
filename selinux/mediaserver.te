@@ -1,1 +1,6 @@
+allow mediaserver system_file:file execmod;
 allow mediaserver graphics_device:chr_file { ioctl open read write };
+allow mediaserver self:socket create;
+allow mediaserver socket_device:dir { remove_name add_name write };
+allow mediaserver socket_device:sock_file { setattr write create };
+allow mediaserver qmuxd:unix_stream_socket connectto;

@@ -2,6 +2,7 @@ type geomagneticd, domain;
 type geomagneticd_exec, exec_type, file_type;
 init_daemon_domain(geomagneticd)
 domain_trans(init, rootfs, geomagneticd)
+file_type_auto_trans(geomagneticd, system_data_file, gps_data_file)
 
 allow geomagneticd gps_data_file:file write;
 allow geomagneticd input_device:chr_file { read ioctl open };
@@ -17,3 +18,9 @@ allow geomagneticd self:capability fowner;
 allow init geomagneticd:process noatsecure;
 allow geomagneticd sysfs:dir { open read };
 allow geomagneticd sysfs:file { open read };
+
+#buff
+allow geomagneticd system_data_file:dir { write remove_name add_name };
+allow geomagneticd system_data_file:file { getattr open };
+
+#allow geomagneticd system_data_file:file { write create setattr unlink rename };
