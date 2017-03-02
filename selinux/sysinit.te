@@ -9,9 +9,5 @@ allow sysinit efs_file:file { open read write };
 allow sysinit cache_file:dir { write add_name };
 allow sysinit cache_file:file { write create open };
 allow sysinit kernel:system syslog_read;
-allow sysinit firmware_exynos:dir { getattr open read };
-allow sysinit firmware_exynos:file { getattr open read setattr write };
-
-#buff
-allow sysinit firmware_exynos:dir search;
-
+allow sysinit firmware_exynos:dir { add_name write search getattr open read };
+allow sysinit firmware_exynos:file { create getattr open read setattr write };
