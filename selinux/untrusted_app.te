@@ -19,3 +19,13 @@ allow untrusted_app sysfs:file { read getattr open };
 
 #allow untrusted_app efs_file:dir { read getattr };
 #allow untrusted_app efs_file:file read;
+
+allow untrusted_app adbsecure_prop:file { getattr open };
+allow untrusted_app adbtcp_prop:file { getattr open };
+allow untrusted_app device_logging_prop:file { getattr open };
+allow untrusted_app logpersistd_logging_prop:file { getattr open };
+allow untrusted_app mmc_prop:file { getattr open };
+allow untrusted_app recovery_prop:file { getattr open };
+allow untrusted_app safemode_prop:file { getattr open };
+allow untrusted_app userinit_prop:file { getattr open };
+
