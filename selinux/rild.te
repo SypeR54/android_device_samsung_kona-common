@@ -4,7 +4,7 @@ allow rild proc_net:file write;
 allow rild sysfs:file write;
 allow rild userdata_block_device:blk_file { read open };
 allow rild mediaserver:dir search;
-allow rild efs_file:file { read getattr unlink append };
+allow rild efs_file:file { read write getattr unlink append };
 allow rild mediaserver:file { read getattr open };
 allow rild qmuxd:unix_stream_socket connectto;
 allow rild socket_device:dir { write add_name };

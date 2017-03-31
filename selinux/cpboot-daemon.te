@@ -10,7 +10,7 @@ dontaudit cpboot-daemon device:chr_file { read write create unlink open };
 dontaudit cpboot-daemon device:dir { write add_name remove_name };
 
 allow cpboot-daemon cgroup:dir { create add_name };
-allow cpboot-daemon efs_file:file { read write open };
+allow cpboot-daemon efs_file:file { read write open getattr unlink };
 allow cpboot-daemon init:unix_stream_socket connectto;
 allow cpboot-daemon property_socket:sock_file write;
 allow cpboot-daemon radio_device:chr_file { read write ioctl open };
