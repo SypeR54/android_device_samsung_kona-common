@@ -98,7 +98,7 @@
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
-     <bool name="config_samsung_stk">true</bool>
+     <bool name="config_samsung_stk">false</bool>
      
     <!--   Support in Surfaceflinger for blur layers.
          NOTE: This requires additional hardware-specific code.     -->
