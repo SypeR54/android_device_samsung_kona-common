@@ -73,6 +73,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     consumerir.exynos4
 
+# Weather providers
+PRODUCT_PACKAGES += \
+	OpenWeatherMapWeatherProvider \
+	YahooWeatherProvider \
+	WundergroundWeatherProvider
+
 # Doze - diable while non working
 # PRODUCT_PACKAGES += \
 #    SamsungDoze
