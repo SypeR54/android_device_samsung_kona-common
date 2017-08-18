@@ -27,7 +27,7 @@
    <integer name="config_lidOpenRotation">-1</integer>
    <integer name="config_deskDockKeepsScreenOn">0</integer>
    <integer name="config_lidNavigationAccessibility">1</integer>
-   
+
     <!-- An Array of "[ConnectivityManager connectionType],
          [# simultaneous connection types]"  -->
     <string-array name="radioAttributes">
@@ -99,13 +99,13 @@
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
      <bool name="config_samsung_stk">false</bool>
-     
+
     <!--   Support in Surfaceflinger for blur layers.
          NOTE: This requires additional hardware-specific code.     -->
     <bool name="config_uiBlurEnabled">true</bool>
 
-     <!-- opt out of sensor default batch size - fix accel? --> 
-     <bool name="config_useDefaultBatchingForAccel">true</bool> 
+     <!-- opt out of sensor default batch size - fix accel? -->
+     <bool name="config_useDefaultBatchingForAccel">true</bool>
 
     <!-- Dream of notifications -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
@@ -120,7 +120,7 @@
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
     <bool name="config_enableWifiDisplay">true</bool>
-    
+
     <!-- Our gralloc has support for protected buffers -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
@@ -130,5 +130,8 @@
 
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">true</bool>
+
+    <!-- Keep chosen default camera app pinned in memory for faster launching -->
+    <bool name="config_pinnerCameraApp">true</bool>
 
 </resources>
