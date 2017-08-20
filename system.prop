@@ -9,8 +9,5 @@ ro.sf.lcd_density=213
 ro.hdcp2.rx=tz
 ro.egl.destroy_after_detach=true
 
-# set usb to mass storage. hacky way to force mtp be reset by user?
-persist.sys.usb.config=mass_storage
-
 # Hack for Youtube
 sys.display-size=3840x2160
