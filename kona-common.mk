@@ -79,9 +79,9 @@ PRODUCT_PACKAGES += \
 	YahooWeatherProvider \
 	WundergroundWeatherProvider
 
-# Doze - diable while non working
-# PRODUCT_PACKAGES += \
-#    SamsungDoze
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
