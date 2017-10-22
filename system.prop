@@ -10,11 +10,6 @@ ro.hdcp2.rx=tz
 ro.egl.destroy_after_detach=true
 
 # ART
-ro.kernel.android.checkjni=0
-dalvik.vm.dex2oat-swap=false
-dalvik.vm.execution-mode=int:fast
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.image-dex2oat-filter=interpret-only
 
 # Hack for Youtube
 sys.display-size=3840x2160
