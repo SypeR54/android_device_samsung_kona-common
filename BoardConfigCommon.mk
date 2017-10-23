@@ -47,3 +47,5 @@ BOARD_SEPOLICY_DIRS += device/samsung/kona-common/selinux
 # Lockscreen real battery display RR
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
+# BLN
+BOARD_HAS_BLN := true
