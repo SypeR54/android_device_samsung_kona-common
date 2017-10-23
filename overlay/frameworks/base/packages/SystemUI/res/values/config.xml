@@ -24,10 +24,10 @@
     <!-- Whether we're using the tablet-optimized recents interface (we use this
      value at runtime for some things) -->
     <bool name="config_recents_interface_for_tablets">true</bool>
-     
+
     <!-- Allow Flashlight service to use wakelock -->
     <bool name="flashlight_use_wakelock">false</bool>
-     
+
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
      <bool name="doze_display_state_supported">true</bool>
 
@@ -41,10 +41,10 @@
     <bool name="doze_proximity_check_before_pulse_intent">true</bool>
 
     <!-- Doze: when to pulse after a buzzworthy notification arrives -->
-    <string name="doze_pulse_schedule" translatable="false">10s,30s,60s,180s</string>
+    <string name="doze_pulse_schedule" translatable="false">1s,26s,66s,136s</string>
 
     <!-- Doze: pulse parameter - once faded in, how long does it stay visible? -->
-    <integer name="doze_pulse_duration_visible">3000</integer>
+    <integer name="doze_pulse_duration_visible">10000</integer>
 
     <!-- Doze: pulse parameter - how long does it take to fade in after an intent? -->
     <integer name="doze_pulse_duration_in_intent">0</integer>
@@ -52,5 +52,7 @@
     <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
     <integer name="doze_pulse_delay_in_intent">0</integer>
 
-</resources>
+    <!-- Doze: pulse parameter - how long does it take to fade in after an intent? -->
+    <integer name="doze_pulse_duration_in_intent">0</integer>
 
+</resources>
