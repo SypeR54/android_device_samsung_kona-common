@@ -13,3 +13,8 @@ ro.egl.destroy_after_detach=true
 
 # Hack for Youtube
 sys.display-size=3840x2160
+
+# Media
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+mm.enable.smoothstreaming=true
