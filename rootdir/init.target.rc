@@ -97,8 +97,8 @@ on post-fs-data
     chmod 666 /sys/devices/virtual/misc/multipdp/waketime
 
 # MTP device permission
-    chmod 0666 /dev/usb_mtp_gadget
-    chown system mtp /dev/usb_mtp_gadget
+    chmod 0660 /dev/mtp_usb
+    chown system mtp /dev/mtp_usb
 
     # MTP permission
 #    chmod 0660 /dev/usb_mtp_gadget
