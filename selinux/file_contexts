@@ -38,9 +38,9 @@
 /dev/hsicctl2			u:object_r:radio_device:s0
 /dev/hsicctl3			u:object_r:radio_device:s0
 /dev/diag			u:object_r:radio_device:s0
-/dev/ttyUSB0			u:object_r:radio_device:s0
-/dev/ttyUSB1			u:object_r:radio_device:s0
-/dev/ttyUSB2			u:object_r:radio_device:s0
+/dev/ttyUSB0			u:object_r:serial_device:s0
+/dev/ttyUSB1			u:object_r:serial_device:s0
+/dev/ttyUSB2			u:object_r:serial_device:s0
 /dev/block/modem/m9kefs1	u:object_r:radio_device:s0
 /tombstones/qcks(/.*)?		u:object_r:tombstone_data_file:s0
 
