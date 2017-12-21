@@ -57,7 +57,3 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # BLN
 BOARD_HAS_BLN := true
-
-# Device specific headers
-TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
-
