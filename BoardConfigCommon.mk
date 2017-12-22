@@ -54,3 +54,6 @@ BOARD_SEPOLICY_DIRS += device/samsung/kona-common/selinux
 
 # Lockscreen real battery display RR
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
+# Device specific headers
+TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
