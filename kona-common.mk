@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.smdk4x12
 
-# Power
-PRODUCT_PACKAGES += \
-    power.smdk4x12
-
 # IR packages
 PRODUCT_PACKAGES += \
     consumerir.exynos4
