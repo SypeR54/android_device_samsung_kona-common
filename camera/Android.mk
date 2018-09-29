@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-ifneq ($(filter n5100 n5110 n5120,$(TARGET_DEVICE)),)
+ifneq ($(filter mehmet,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

@@ -16,7 +16,7 @@
 #
 
 set -e
-DEVICE_COMMON=kona-common
+DEVICE_COMMON=mehmet
 DEVICE=${DEVICE:-nodevice}
 VENDOR=samsung
 
@@ -37,7 +37,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers and common guards
-write_headers "n5100 n5110 n5120"
+write_headers "mehmet"
 
 write_makefiles "$MY_DIR"/proprietary-files.txt
 

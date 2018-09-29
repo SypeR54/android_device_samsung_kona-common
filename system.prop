@@ -1,8 +1,7 @@
 #
-# system.prop for kona devices
+# system.prop for mehmet devices
 #
 
-rild.libpath=/system/lib/libsec-ril.so
 ro.lcd_min_brightness=20
 ro.sf.hwrotation=270
 ro.sf.lcd_density=213

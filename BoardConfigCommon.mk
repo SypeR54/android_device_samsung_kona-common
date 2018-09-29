@@ -16,7 +16,7 @@
 
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
 
-LOCAL_PATH := device/samsung/kona-common
+LOCAL_PATH := device/GeneralMobile/mehmet
 
 # For KK blobs
 MALLOC_SVELTE := true
@@ -43,14 +43,14 @@ BOARD_GLOBAL_CFLAGS += -DDECAY_TIME_DEFAULT=0
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 
 # Lights
-BOARD_EXYNOS4X12_TABLET_HAS_LED_BUTTONS := true
+BOARD_EXYNOS4X12_TABLET_HAS_LED_BUTTONS := none
 
 # Charger
 NO_CHARGER_LED := true
 
 
 # Selinux
-BOARD_SEPOLICY_DIRS += device/samsung/kona-common/selinux
+BOARD_SEPOLICY_DIRS += device/GeneralMobile/mehmet/selinux
 
 # Lockscreen real battery display RR
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO

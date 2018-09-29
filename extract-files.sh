@@ -16,7 +16,7 @@
 #
 
 set -e
-DEVICE_COMMON=kona-common
+DEVICE_COMMON=mehmet
 DEVICE=${DEVICE:-nodevice}
 VENDOR=samsung
 

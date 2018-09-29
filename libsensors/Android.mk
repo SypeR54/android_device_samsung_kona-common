@@ -28,7 +28,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 
-ifeq ($(TARGET_DEVICE), n5110)
+ifeq ($(TARGET_DEVICE), mehmet)
 LOCAL_CFLAGS := -DALS3201_SENSOR
 endif
 
